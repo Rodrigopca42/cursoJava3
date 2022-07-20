@@ -9,7 +9,7 @@ public class DadoPessoas {
         float maior, menor;
         
         float[] altura = new float[20];
-        String[] genero = new String[20];
+        char[] genero = new char[20];
         
         Scanner tec =  new Scanner(System.in);
         
@@ -20,7 +20,7 @@ public class DadoPessoas {
             System.out.print("Altura da "+ (i + 1)+ "° Pessoa: ");
             altura[i] = tec.nextFloat();
             System.out.print("Gênero da "+ (i + 1)+ "° Pessoa: ");
-            genero[i] = tec.nextLine();
+            genero[i] = tec.next().charAt(0);
             tec.nextLine();
         }
         tec.close();
@@ -45,20 +45,30 @@ public class DadoPessoas {
         }
         System.out.printf("MAIOR ALTURA: %.2f%n",maior);
 
-        float soma = 0;
-        int nPosicao = 0;
-        for(i = 0; i < n; i++){
-            if(genero[i].equalsIgnoreCase("f")){
-                soma += altura[i];
-                nPosicao++;
-            }
-        }
-        float mediaAlturaMulher = soma / nPosicao;
-        System.out.printf("Média das Alturas das Mulheres: %.2f%n", mediaAlturaMulher);
+        /*
+         *  Esse for tem a função de fazer a comparação da letra "f" como o esta
+         * gravado no vetor genero, no caso da condicional ser verdadeira, a soma e 
+         * a posição fazem uma adição, mas, ainda não tenho a resposta para esse problema.
+        */
 
 
-        int nHomens = n - nPosicao;
-        
-        System.out.printf("NÚMERO DE HOMENS: %.2f%n",nHomens);
+        /*
+        *    float soma = 0;
+        *    int nPosicao = 0;
+        *    for(i = 0; i < n; i++){
+        *    if(genero[i].equalsI("f")){
+        *            soma += altura[i];
+        *            nPosicao++;
+        *        }
+        *    }
+        *    float mediaAlturaMulher = soma / nPosicao;
+        *    System.out.printf("Média das Alturas das Mulheres: %.2f%n", mediaAlturaMulher);
+        *    
+        *    
+        *    int nHomens = n - nPosicao;
+            
+        *    System.out.printf("NÚMERO DE HOMENS: %.2f%n",nHomens);
+        */
+
     }
 }
