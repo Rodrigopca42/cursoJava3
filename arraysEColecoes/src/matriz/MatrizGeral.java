@@ -1,5 +1,9 @@
 package matriz;
 
+import java.util.Scanner;
+
+import javax.swing.JOptionPane;
+
 public class MatrizGeral {
     
 
@@ -19,4 +23,65 @@ public class MatrizGeral {
      * e)- Alrerar a matriz elevando ao quadrado todos os números negativos da
      * mesma, em seguida imprimir a matriz alterada.
      */
-}
+
+    public static void main(String[] args) {
+
+        int n, i, j;
+
+        float[][] num = new float[10][10];
+
+        String n1 = JOptionPane.showInputDialog("Qual é a ordem da matriz?");
+        n = Integer.parseInt(n1);
+
+        Scanner tec = new Scanner(System.in);
+
+        for(i = 0; i < n; i++){
+            for(j = 0; j < n; j++){
+                System.out.print("Elemento ["+i+", "+j+"]: ");
+                num[i][j] = tec.nextFloat();
+            }
+        }
+        
+        System.out.println(" ");
+        float soma = 0;
+        for(i = 0; i < n; i++){
+            for(j = 0; j < n; j++){
+                if( num[i][j] > 0){
+                    soma += num[i][j];
+                }
+            }
+        }
+        System.out.printf("SOMA DOS POSITIVOS: %.1f", soma);
+        System.out.println(" ");
+
+
+        System.out.print("Escolha uma linha: ");
+        int linha = tec.nextInt();
+        System.out.print("LINHA ESCOLHIDA: ");
+        for(j = 0; j < n; j++){
+            System.out.print(num[linha][j]+" ");
+        }
+        
+        System.out.println(" ");
+        System.out.print("Escolha uma coluna: ");
+        int coluna = tec.nextInt();
+        System.out.print("COLUNA ESCOLHIDA: ");
+        for(i = 0; i< n; i++){
+            System.out.print(num[i][coluna] +" ");
+        }
+        tec.close();
+        
+        
+        System.out.println(" ");
+        System.out.print("DIAGONAL PRINCIPAL: ");
+        for(i = 0; i < n; i++){
+            System.out.println(num[i][i] + " ");
+        }
+
+
+        }
+        
+        
+        
+    }
+

@@ -27,6 +27,8 @@ public class DiagonalNegativos {
        for(i = 0; i < n; i++){
         System.out.print(mat[i][i]+ " ");
        }
+
+       
         System.out.println(" ");
        int cont = 0;
        for(i = 0; i < n; i++){
