@@ -55,12 +55,14 @@ public class MatrizGeral {
         System.out.println(" ");
 
 
+        System.out.println(" ");
         System.out.print("Escolha uma linha: ");
         int linha = tec.nextInt();
         System.out.print("LINHA ESCOLHIDA: ");
         for(j = 0; j < n; j++){
             System.out.print(num[linha][j]+" ");
         }
+        System.out.println(" ");
         
         System.out.println(" ");
         System.out.print("Escolha uma coluna: ");
@@ -70,14 +72,29 @@ public class MatrizGeral {
             System.out.print(num[i][coluna] +" ");
         }
         tec.close();
+        System.out.println(" ");
         
         
         System.out.println(" ");
         System.out.print("DIAGONAL PRINCIPAL: ");
         for(i = 0; i < n; i++){
-            System.out.println(num[i][i] + " ");
+            System.out.print(num[i][i] + " ");
         }
 
+        System.out.println(" ");
+        System.out.println(" ");
+        System.out.println("MARIZ ALTERADA:");
+        
+        for(i = 0; i < n; i++){
+            for(j = 0; j < n; j++){
+                if(num[i][j] < 0){
+                  num[i][j] = (float)Math.pow(num[i][j], 2);
+                }
+                System.out.print(num[i][j]+" ");
+            }
+            System.out.println(" ");
+        }
+        System.out.println(" ");
 
         }
         

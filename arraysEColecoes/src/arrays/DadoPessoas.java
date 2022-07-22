@@ -53,22 +53,22 @@ public class DadoPessoas {
 
 
         /*
-        *    float soma = 0;
-        *    int nPosicao = 0;
-        *    for(i = 0; i < n; i++){
-        *    if(genero[i].equalsI("f")){
-        *            soma += altura[i];
-        *            nPosicao++;
-        *        }
-        *    }
-        *    float mediaAlturaMulher = soma / nPosicao;
-        *    System.out.printf("Média das Alturas das Mulheres: %.2f%n", mediaAlturaMulher);
-        *    
-        *    
-        *    int nHomens = n - nPosicao;
+           float soma = 0;
+            int nPosicao = 0;
+            for(i = 0; i < n; i++){
+            if(genero[i].equals(HashCode =="f")){
+                    soma += altura[i];
+                    nPosicao++;
+                }
+            }
+            float mediaAlturaMulher = soma / nPosicao;
+                 System.out.printf("Média das Alturas das Mulheres: %.2f%n", mediaAlturaMulher);
+        
+        
+            int nHomens = n - nPosicao;
             
-        *    System.out.printf("NÚMERO DE HOMENS: %.2f%n",nHomens);
-        */
-
+            System.out.printf("NÚMERO DE HOMENS: %.2f%n",nHomens);
+       
+         */
     }
 }
