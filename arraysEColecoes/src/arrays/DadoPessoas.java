@@ -52,11 +52,11 @@ public class DadoPessoas {
         */
 
 
-        /*
+        
            float soma = 0;
             int nPosicao = 0;
             for(i = 0; i < n; i++){
-            if(genero[i].equals(HashCode =="f")){
+            if(genero[i] == 'f'){
                     soma += altura[i];
                     nPosicao++;
                 }
@@ -67,8 +67,8 @@ public class DadoPessoas {
         
             int nHomens = n - nPosicao;
             
-            System.out.printf("NÚMERO DE HOMENS: %.2f%n",nHomens);
+            System.out.printf("NÚMERO DE HOMENS: %d%n", nHomens);
        
-         */
+    
     }
 }
